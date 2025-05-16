@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crypto Donation - Make a Difference</title>
+    <title>Help Feed Gaza's Hungry Children</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" class="favicon" href="ph2.png" type="image/png">
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
+        .favicon {
+          
+        border-radius: 50%;
+    }
         body {
    
             font-family: 'Roboto', sans-serif;
@@ -261,16 +267,133 @@ Thank you for your kindness and humanity.
     </div>
     <div id="wallet" class="donate-section">
         <h2>Donate via USDT</h2>
-        <h2>Tron20</h2>
+        <p>
+            Why USDT?
+        </p>
+        <small>
+           
+In the current crisis, traditional bank transfers come with high fees and delays, making it challenging to reach those in urgent need. USDT offers a fast, reliable, and widely accepted solution for direct donations, ensuring that every dollar you send reaches the hungry children without unnecessary cuts.
+        </small>
+        
         <div class="wallet-container">
+            <br>
             <img src="usdt-qr.png" alt="QR Code" class="qr-code">
             <div class="wallet-info">
-                <div class="wallet-address" id="wallet-address" onclick="copyWalletAddress()">TQ6Kp7D5xYPxyz123abc456def789ghi</div>
+                <div class="wallet-address" id="wallet-address" onclick="copyWalletAddress()">TQupAGXm7fsR1WbPNtwhkGvdhmkYATyjZt</div>
+        <h2>TRC-20 </h2>
+
                 <button class="copy-btn" onclick="copyWalletAddress()">Copy Wallet Address</button>
                 <div class="notification" id="notification">Address copied to clipboard!</div>
             </div>
         </div>
     </div>
+   
+    
+    ```
+<footer class="footer-section">
+    <div class="footer-container">
+        <h3>Contact Me</h3>
+        <ul class="footer-contact-list">
+            <li>
+                <a href="mailto:our_children@example.com" target="_blank">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/new-post.png" alt="Email" />
+                    our_children@example.com
+                </a>
+            </li>
+            <li>
+                <a href="https://linkedin.com/in/mohameed-siam-733312218/" target="_blank">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="LinkedIn" />
+                    linkedin.com/in/mohameed-733312218
+                </a>
+            </li>
+            <li>
+                <a href="tel:+972597742302" target="_blank">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/phone.png" alt="Phone" />
+                    +972597742302
+                </a>
+            </li>
+        </ul>
+    </div>
+    <p class="footer-note">© 2025 Our Children. All rights reserved.</p>
+</footer>
+
+<style>
+    .footer-section {
+        background-color: #333;
+        color: #fff;
+        padding: 30px 20px;
+        text-align: center;
+        border-top: 2px solid #444;
+    }
+    .footer-container h3 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    .footer-contact-list {
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+        display: inline-block;
+        text-align: left;
+    }
+    .footer-contact-list li {
+        margin-bottom: 15px;
+    }
+    .footer-contact-list a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        transition: color 0.3s;
+    }
+    .footer-contact-list a:hover {
+        color: #f4b400;
+    }
+    .footer-contact-list img {
+        width: 30px;
+        height: 30px;
+    }
+    .footer-note {
+        margin-top: 20px;
+        font-size: 14px;
+        color: #bbb;
+    }
+</style>
+```
+
+
+    <style>
+        .contact-section {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #f7f7f7;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .contact-section h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .contact-list {
+            list-style: none;
+            padding: 0;
+        }
+        .contact-list li {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        .contact-list a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .contact-list a:hover {
+            text-decoration: underline;
+        }
+    </style>
     <script>
         function copyWalletAddress() {
             const address = document.getElementById("wallet-address").innerText;
